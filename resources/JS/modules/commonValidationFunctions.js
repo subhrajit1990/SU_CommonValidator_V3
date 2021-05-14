@@ -3,6 +3,8 @@ class CommonValidationFunctions{
         this.err="";
     }
     
+    // sample validation methods
+    
     nullCheck(s) {
       this.err = s.length ? 0 : 5;
     return this.err;
