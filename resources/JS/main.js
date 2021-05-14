@@ -7,6 +7,7 @@ CV.bootStrapJSOps = new function(){
 		// doSomething
    	 }
 	formValidation = function(){
+		// Sample request payload construction -- Starts
 		var form = document.getElementsByClassName("inputType"),
 		form_validator_check = {
             		lastname: {
@@ -18,15 +19,17 @@ CV.bootStrapJSOps = new function(){
                 		message: ["Please enter the first name"]
             		}
         	};
+		// Sample request payload construction -- Ends
 		
+		// Sample function call -- Starts
 		var mainRt = new MainRoute();
-		console.log(mainRt.getRouteName());
 		if(mainRt.validateForm(form,form_validator_check)){
 			console.log("validation success");
 			// doSomething
 		}else{
 			console.log("validation fail");
 		}
+		// Sample function call -- Ends
 	}
 }
 
