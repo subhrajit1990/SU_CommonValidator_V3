@@ -7,7 +7,7 @@ class CommonValidationEngine extends CommonValidationFunctions{
 	}
 	
 	commonValidatorValid(element, check) {
-    		if (element.type == 'text' || element.type == 'textarea' || element.type == 'email') {
+    		if (element.type == 'text' || element.type == 'textarea' || element.type == 'email') { // More element type goes here
         		return this[check](element.value);   
     		} else {
         		return this[check](element);
